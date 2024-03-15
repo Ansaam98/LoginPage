@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    direction: ltr;
+}
+
+.right {
+    flex: 1;
+    background-image: url('images/Photo.png');
+    background-size: cover;
+    background-position: center;
+    direction: rtl;
+}
+
+.right .input-icon {
+    left: auto;
+    right: 7%;
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: rgb(118, 118, 118);
+    margin-bottom: 20px;
+}
+
+.input-container {
+    position: relative;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px 40px 10px 30px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f3f1ff;
+}
+
+.input-icon {
+    position: absolute;
+    left: 7%;
+    top: 40%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+.login-button {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    border: none;
+    margin: 10px;
+    padding: 15px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 20%;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.login-button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+}
+
+.divider {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    width: 20%;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider::before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.divider::after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.login-with {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.login-social-button {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.login-social-button img {
+    width: 20px;
+    margin-right: 10px;
+}
