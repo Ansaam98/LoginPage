@@ -22,7 +22,7 @@ body {
 
 .right {
     flex: 1;
-    background-image: url('images/Photo.png');
+    background-image: url('../images/Photo.png');
     background-size: cover;
     background-position: center;
     direction: rtl;
